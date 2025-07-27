@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #ffe6ec, #ffe9f0);
+  color: #d10068;
+  text-align: center;
+}
+
+/* Grid layout for photos and message */
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 30px 15px;
+}
+
+/* Photos */
+.photo {
+  width: 120px;
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+.rotate-left {
+  transform: rotate(-5deg);
+}
+.rotate-right {
+  transform: rotate(5deg);
+}
+
+/* Center message */
+.center-message {
+  width: 100%;
+  padding: 20px 10px;
+  background-color: #fff0f5;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(255, 105, 180, 0.3);
+  margin: 20px 0;
+}
+.center-message h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #e91e63;
+}
+.center-message h2 {
+  font-size: 1.8em;
+  color: #c2185b;
+}
+
+/* Love message */
+.love-message {
+  max-width: 700px;
+  margin: 30px auto;
+  font-size: 1.1em;
+  padding: 0 15px;
+  color: #ad1457;
+}
+
+/* Date box */
+.date-box {
+  margin: 40px auto 30px;
+  padding: 12px 25px;
+  background-color: #ffc1e3;
+  display: inline-block;
+  border-radius: 12px;
+  font-size: 1.2em;
+  color: #b71c1c;
+  font-weight: bold;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .photo {
+    width: 90px;
+    height: 90px;
+  }
+  .center-message h1 {
+    font-size: 1.8em;
+  }
+  .center-message h2 {
+    font-size: 1.3em;
+  }
+  .love-message {
+    font-size: 1em;
+  }
+}
